@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Basic Calculator</title>
+  <link rel="stylesheet" href="/styles/stylesheet.css" />
+  <script type="text/javascript" src="./js/index.js"></script>
+
+<!--  Declaração dos botões da calculadora. -->
+<body>
+  <div class="calculator">
+    <!-- Propriedade "readonly" não permite que o conteúdo seja modificado pelo usuário.  -->
+    <div> <input type="text" readonly value="0" id="screen"></div>
+
+    <div class="calculator-buttons">
+
+      <button class="calc-button clear" onclick="clearAll();">C</button>
+      <button class="calc-button" onclick="fillNumbers('/');">/</button>
+      <button class="calc-button" onclick="fillNumbers('*');">*</button>
+      <button class="calc-button" onclick="fillNumbers('-');">-</button>
+
+      <button class="calc-button" onclick="fillNumbers(7);">7</button>
+      <button class="calc-button" onclick="fillNumbers(8);">8</button>
+      <button class="calc-button" onclick="fillNumbers(9);">9</button>
+      <button class="calc-button" onclick="fillNumbers('+');">+</button>
+
+      <button class=" calc-button" onclick="fillNumbers(4);">4</button>
+      <button class="calc-button" onclick="fillNumbers(5);">5</button>
+      <button class="calc-button" onclick="fillNumbers(6);">6</button>
+      <button class="calc-button" onclick="fillNumbers('%');">%</button>
+
+      <button class="calc-button" onclick="fillNumbers(1);">1</button>
+      <button class="calc-button" onclick="fillNumbers(2);">2</button>
+      <button class="calc-button" onclick="fillNumbers(3);">3</button>
+      <button class="calc-button equals" onclick="results();">=</button>
+
+      <button class="calc-button zero" onclick="fillNumbers(0);">0</button>
+      <button class="calc-button" onclick="fillNumbers('.');">.</button>
+
+    </div>
+  </div>
+
+</body>
+
+</html>
